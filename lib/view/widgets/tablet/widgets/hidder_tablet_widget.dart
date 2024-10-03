@@ -13,7 +13,7 @@ class HiderTabletWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: .15.sh,
+      height: .12.sh,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,

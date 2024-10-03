@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:web_app/core/app_const.dart';
-import 'package:web_app/view/widgets/web/hider_web_widget.dart';
+import 'package:web_app/view/widgets/web/widget/hider_web_widget.dart';
+import 'package:web_app/view/widgets/web/widget/item_filter_web_widget.dart';
 
 class WebScreenWidget extends StatelessWidget {
   const WebScreenWidget({super.key});
@@ -15,63 +16,9 @@ class WebScreenWidget extends StatelessWidget {
         SizedBox(
           height: 30.h,
         ),
-        ItemFilterWidget()
+       const ItemFilterWebWidget()
       ],
     );
   }
 }
 
-class ItemFilterWidget extends StatelessWidget {
-  const ItemFilterWidget({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 35.w, vertical: 10.h),
-      child: Row(
-        children: [
-          Text(
-            'Items',
-            style: TextStyle(
-                fontSize: 10.sp,
-                fontWeight: FontWeight.w400,
-                color: Colors.white),
-          ),
-          const Spacer(),
-          SizedBox(
-            width: 8.w,
-          ),
-          InkWell(
-            onTap: () {},
-            child: SvgPicture.asset(
-              AppConst.svgPath + 'filter.svg',
-               width: 48.w,
-            height: 48.h,
-            ),
-          ),
-          SizedBox(
-            width: 8.w,
-          ),
-          SvgPicture.asset(
-            AppConst.svgPath + 'bigLine.svg',
-            width:1.h ,
-            height:15.w ,
-          ),
-          SizedBox(
-            width: 8.w,
-          ),
-          InkWell(
-            onTap: () {},
-            child: SvgPicture.asset(
-              AppConst.svgPath + 'Button.svg',
-              height: 48.h,
-              width: 177.w,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}

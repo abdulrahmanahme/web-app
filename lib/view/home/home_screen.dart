@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:web_app/core/app_colors.dart';
 import 'package:web_app/view/widgets/tablet/tablet_screen.dart';
-import 'package:web_app/view/widgets/web/hider_web_widget.dart';
+import 'package:web_app/view/widgets/web/widget/hider_web_widget.dart';
 import 'package:web_app/view/widgets/web/web_screen_widget.dart';
 
 class HomeScreen extends StatefulWidget {
