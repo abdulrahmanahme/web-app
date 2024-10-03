@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -28,6 +30,8 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: AppColors.black,
       body: LayoutBuilder(
         builder: (context, constraints) {
+          log('ssssss ${constraints.maxWidth}');
+
           // Check if the platform is web or mobile/tablet
           if (kIsWeb) {
             // Web layout (Desktop)

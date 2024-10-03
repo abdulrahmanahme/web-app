@@ -86,7 +86,7 @@ class HiderWebWidget extends StatelessWidget {
                               radius: 12,
                               backgroundColor: Colors.grey[200],
                               foregroundImage:
-                                  AssetImage(AppConst.svgImage + 'user.png'),
+                                  AssetImage(AppConst.imagePath + 'user.png'),
                               // backgroundImage:,
                             ),
                             SizedBox(
