@@ -11,9 +11,10 @@ class ItemFilterWebWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 18.w, vertical: 10.h),
+      padding: EdgeInsets.symmetric(horizontal: 0.w, vertical: 10.h),
       child: Row(
         children: [
+          SizedBox(width:10.w,),
           Text(
             'Items',
             style: TextStyle(
@@ -25,31 +26,38 @@ class ItemFilterWebWidget extends StatelessWidget {
           SizedBox(
             width: 8.w,
           ),
-          InkWell(
-            onTap: () {},
-            child: SvgPicture.asset(
-              AppConst.svgPath + 'filter.svg',
-               width: 48.w,
-            height: 48.h,
-            ),
-          ),
-          SizedBox(
-            width: 8.w,
-          ),
-          SvgPicture.asset(
-            AppConst.svgPath + 'bigLine.svg',
-            width:1.h ,
-            height:12.w ,
-          ),
-          SizedBox(
-            width: 8.w,
-          ),
-          InkWell(
-            onTap: () {},
-            child: SvgPicture.asset(
-              AppConst.svgPath + 'Button.svg',
-              height: 48.h,
-              width: 177.w,
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 35.w, vertical: 0.h),
+            child: Row(
+              children: [
+                InkWell(
+                  onTap: () {},
+                  child: SvgPicture.asset(
+                    AppConst.svgPath + 'filter.svg',
+                    width: 48.w,
+                    height: 48.h,
+                  ),
+                ),
+                SizedBox(
+                  width: 8.w,
+                ),
+                SvgPicture.asset(
+                  AppConst.svgPath + 'bigLine.svg',
+                  width: 1.h,
+                  height: 12.w,
+                ),
+                SizedBox(
+                  width: 8.w,
+                ),
+                InkWell(
+                  onTap: () {},
+                  child: SvgPicture.asset(
+                    AppConst.svgPath + 'Button.svg',
+                    height: 48.h,
+                    width: 177.w,
+                  ),
+                ),
+              ],
             ),
           ),
         ],

@@ -10,11 +10,11 @@ class CardItemWebWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      padding: const EdgeInsets.symmetric(vertical: 20),
+      padding:  EdgeInsets.symmetric(vertical: 20.h,horizontal: 10.w),
       child: SizedBox(
           width: MediaQuery.of(context).size.width,
           child: Wrap(
-            alignment: WrapAlignment.spaceEvenly,
+            // alignment: WrapAlignment.spaceEvenly,
             spacing: 10,
             runSpacing: 10,
             direction: Axis.horizontal,

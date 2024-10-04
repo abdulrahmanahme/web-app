@@ -13,7 +13,7 @@ class HiderTabletWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: .12.sh,
+      height: .1.sh,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
@@ -37,7 +37,7 @@ class HiderTabletWidget extends StatelessWidget {
                 ),
                 Spacer(),
                 Padding(
-                  padding:  EdgeInsets.only(top: 7.h),
+                  padding: EdgeInsets.only(top: 7.h),
                   child: TabTabletBarWidget(),
                 ),
                 Padding(
@@ -145,7 +145,7 @@ class _TabTabletBarWidgetState extends State<TabTabletBarWidget> {
   Widget build(BuildContext context) {
     return Container(
       // color: Colors.green,
-      height: .06.sh,
+      height: .042.sh,
       child: ListView.builder(
           scrollDirection: Axis.horizontal,
           itemCount: AppConst.tapBarTitles.length,

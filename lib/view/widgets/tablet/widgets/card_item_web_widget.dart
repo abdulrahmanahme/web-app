@@ -46,16 +46,19 @@ class CardItemTabletWidget extends StatelessWidget {
                                     onTap: () {},
                                     child: SvgPicture.asset(
                                       AppConst.svgPath + 'filterItem.svg',
+                                      height: 30.h,
+                                      width: 30.w,
                                     ),
                                   ),
                                 ),
                                 Positioned(
                                   left: 5.w,
-                                  bottom: 10.h,
+                                  bottom: 1.h,
                                   child: InkWell(
                                     onTap: () {},
                                     child: SvgPicture.asset(
                                       AppConst.svgPath + 'Labels.svg',
+                                      width: 70.w,
                                     ),
                                   ),
                                 ),
@@ -87,7 +90,7 @@ class CardItemTabletWidget extends StatelessWidget {
                                   height: 15.h,
                                 ),
                                 Row(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   children: [
                                     SvgPicture.asset(
@@ -97,12 +100,12 @@ class CardItemTabletWidget extends StatelessWidget {
                                       width: 2.w,
                                     ),
                                     SizedBox(
-                                      width: .1.sw,
+                                      width: .15.sw,
                                       child: Text(
                                         '5 Nights (Jan 16 - Jan 20, 2024)',
                                         style: TextStyle(
                                             fontSize: 4.sp,
-                                            fontWeight: FontWeight.w200,
+                                            fontWeight: FontWeight.w400,
                                             overflow: TextOverflow.ellipsis,
                                             color: AppColors.disPlayColor),
                                       ),
@@ -110,14 +113,14 @@ class CardItemTabletWidget extends StatelessWidget {
                                   ],
                                 ),
                                 SizedBox(
-                                  height: 18.h,
+                                  height: 10.h,
                                 ),
                                 Divider(
                                   height: .2.h,
                                   color: Color(0xff262626),
                                 ),
                                 SizedBox(
-                                  height: 18.h,
+                                  height: 10.h,
                                 ),
                                 Row(
                                   children: [
@@ -132,7 +135,7 @@ class CardItemTabletWidget extends StatelessWidget {
                                     Text(
                                       '4 unfinished tasks',
                                       style: TextStyle(
-                                          fontSize: 3.sp,
+                                          fontSize: 5.sp,
                                           overflow: TextOverflow.ellipsis,
                                           fontWeight: FontWeight.w400,
                                           color: AppColors.disPlayColor),
@@ -142,9 +145,9 @@ class CardItemTabletWidget extends StatelessWidget {
                               ],
                             ),
                           ),
-                          SizedBox(
-                            height: 15.h,
-                          ),
+                          // SizedBox(
+                          //   height: 15.h,
+                          // ),
                         ],
                       ),
                     )),
