@@ -11,7 +11,7 @@ class ItemFilterWebWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 35.w, vertical: 10.h),
+      padding: EdgeInsets.symmetric(horizontal: 18.w, vertical: 10.h),
       child: Row(
         children: [
           Text(

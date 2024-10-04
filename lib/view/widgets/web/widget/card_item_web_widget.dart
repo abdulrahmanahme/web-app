@@ -4,9 +4,9 @@ import 'package:flutter_svg/svg.dart';
 import 'package:web_app/core/app_colors.dart';
 import 'package:web_app/core/app_const.dart';
 
-class CardItemTabletWidget extends StatelessWidget {
-  const CardItemTabletWidget({super.key});
-
+class CardItemWebWidget extends StatelessWidget {
+  const CardItemWebWidget({super.key, required this.mainAxisExtent});
+  final double mainAxisExtent;
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -123,16 +123,14 @@ class CardItemTabletWidget extends StatelessWidget {
                                   children: [
                                     SizedBox(
                                       height: 30.h,
-                                      width: 30.w,
                                       child: Image.asset(
-                                          AppConst.imagePath + 'groupUser.png',
-                                          ),
+                                          AppConst.imagePath + 'groupUser.png'),
                                     ),
                                     Spacer(),
                                     Text(
                                       '4 unfinished tasks',
                                       style: TextStyle(
-                                          fontSize: 3.sp,
+                                          fontSize: 4.sp,
                                           overflow: TextOverflow.ellipsis,
                                           fontWeight: FontWeight.w400,
                                           color: AppColors.disPlayColor),
