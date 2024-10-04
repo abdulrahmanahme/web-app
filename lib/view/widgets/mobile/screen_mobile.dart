@@ -14,6 +14,9 @@ class ScreenMobile extends StatelessWidget {
     return Column(
       children: [
         const HiderMobileWidget(),
+        SizedBox(
+          height: 5.h,
+        ),
         const ItemFilterMobileWidget(),
         Expanded(
             child: ListView.builder(
@@ -21,7 +24,7 @@ class ScreenMobile extends StatelessWidget {
                 itemCount: AppConst.itemsTitles.length,
                 itemBuilder: (context, index) => Padding(
                       padding: EdgeInsets.symmetric(
-                          horizontal: 10.w, vertical: 10.h),
+                          horizontal: 20.w, vertical: 15.h),
                       child: Container(
                         // height: 100.h,
                         // width: 100.w,
@@ -40,9 +43,10 @@ class ScreenMobile extends StatelessWidget {
                                 alignment: Alignment.bottomLeft,
                                 fit: StackFit.loose,
                                 children: [
-                                  Image.asset(AppConst.imagePath +
-                                      AppConst.itemsImages[index],
-                                      ),
+                                  Image.asset(
+                                    AppConst.imagePath +
+                                        AppConst.itemsImages[index],
+                                  ),
                                   Positioned(
                                     top: 5,
                                     right: 5,
@@ -54,7 +58,7 @@ class ScreenMobile extends StatelessWidget {
                                     ),
                                   ),
                                   Positioned(
-                                    left: 5.w,
+                                    left: 18.w,
                                     bottom: 10.h,
                                     child: InkWell(
                                       onTap: () {},
@@ -68,7 +72,7 @@ class ScreenMobile extends StatelessWidget {
                             ),
                             Padding(
                               padding: EdgeInsets.symmetric(
-                                  horizontal: 8.w, vertical: 5.h),
+                                  horizontal: 18.w, vertical: 5.h),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.start,
@@ -77,7 +81,7 @@ class ScreenMobile extends StatelessWidget {
                                     height: 5.h,
                                   ),
                                   SizedBox(
-                                    width: .16.sw,
+                                    width: .4.sw,
                                     child: Text(
                                       AppConst.itemsTitles[index].toString(),
                                       style: TextStyle(
@@ -92,13 +96,13 @@ class ScreenMobile extends StatelessWidget {
                                   ),
                                   Row(
                                     crossAxisAlignment:
-                                        CrossAxisAlignment.start,
+                                        CrossAxisAlignment.center,
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     children: [
                                       SvgPicture.asset(
                                         AppConst.svgPath + 'calendar.svg',
-                                      height: 20.h,
-                                      width: 17.w,
+                                        height: 20.h,
+                                        width: 17.w,
                                       ),
                                       SizedBox(
                                         width: 6.w,

@@ -34,8 +34,8 @@ class HiderMobileWidget extends StatelessWidget {
                   onTap: () {},
                   child: SvgPicture.asset(
                     AppConst.svgPath + 'menu.svg',
-                    height: 25.h,
-                    width: 25.w,
+                    // height: 25.h,
+                    // width: 25.w,
                   ),
                 ),
                 SizedBox(
@@ -59,8 +59,8 @@ class HiderMobileWidget extends StatelessWidget {
                         onTap: () {},
                         child: SvgPicture.asset(
                           AppConst.svgPath + 'Iconsseting.svg',
-                          width: 18.w,
-                          height: 20.h,
+                          width: 25.w,
+                          height: 25.h,
                         ),
                       ),
                       SizedBox(
@@ -70,8 +70,8 @@ class HiderMobileWidget extends StatelessWidget {
                         onTap: () {},
                         child: SvgPicture.asset(
                           AppConst.svgPath + 'bell.svg',
-                          width: 18.w,
-                          height: 20.h,
+                          width: 25.w,
+                          height: 25.h,
                         ),
                       ),
                       SizedBox(
@@ -82,14 +82,14 @@ class HiderMobileWidget extends StatelessWidget {
                         height: 20.h,
                       ),
                       SizedBox(
-                        width: 8.w,
+                        width: 10.w,
                       ),
                       InkWell(
                         onTap: () {},
                         child: Row(
                           children: [
                             CircleAvatar(
-                              radius: 12,
+                              radius: 15,
                               backgroundColor: Colors.grey[200],
                               foregroundImage:
                                   AssetImage(AppConst.imagePath + 'user.png'),

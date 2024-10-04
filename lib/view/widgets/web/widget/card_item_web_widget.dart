@@ -37,8 +37,10 @@ class CardItemWebWidget extends StatelessWidget {
                               alignment: Alignment.bottomLeft,
                               fit: StackFit.loose,
                               children: [
-                                Image.asset(AppConst.imagePath +
-                                    AppConst.itemsImages[index]),
+                                Image.asset(
+                                  AppConst.imagePath +
+                                      AppConst.itemsImages[index],
+                                ),
                                 Positioned(
                                   top: 5,
                                   right: 5,
