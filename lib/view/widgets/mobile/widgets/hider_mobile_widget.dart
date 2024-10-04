@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -14,7 +13,7 @@ class HiderMobileWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height:65.h,
+      height: 65.h,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
@@ -29,19 +28,19 @@ class HiderMobileWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 SizedBox(
-                        width: 8.w,
-                      ),
-                InkWell(
-                  onTap: (){},
-                  child: SvgPicture.asset(
-                      AppConst.svgPath + 'menu.svg',
-                      height: 25.h,
-                      width: 25.w,
-                    ),
+                  width: 8.w,
                 ),
-                  SizedBox(
-                        width: 8.w,
-                      ),
+                InkWell(
+                  onTap: () {},
+                  child: SvgPicture.asset(
+                    AppConst.svgPath + 'menu.svg',
+                    height: 25.h,
+                    width: 25.w,
+                  ),
+                ),
+                SizedBox(
+                  width: 8.w,
+                ),
                 Padding(
                   padding: EdgeInsets.only(bottom: 10.h),
                   child: SvgPicture.asset(
@@ -51,13 +50,11 @@ class HiderMobileWidget extends StatelessWidget {
                   ),
                 ),
                 Spacer(),
-                
                 Padding(
                   padding:
                       EdgeInsets.only(left: 5.w, right: 10.w, bottom: 15.h),
                   child: Row(
                     children: [
-                     
                       InkWell(
                         onTap: () {},
                         child: SvgPicture.asset(
@@ -98,8 +95,6 @@ class HiderMobileWidget extends StatelessWidget {
                                   AssetImage(AppConst.imagePath + 'user.png'),
                               // backgroundImage:,
                             ),
-                            
-                           
                           ],
                         ),
                       ),
@@ -119,4 +114,3 @@ class HiderMobileWidget extends StatelessWidget {
     );
   }
 }
-
